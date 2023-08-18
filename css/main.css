@@ -1,0 +1,322 @@
+nav .nav{
+display:flex ;
+justify-content: space-around;
+padding-top: 10px;
+}
+.nav1 ul li{
+
+display: inline-block;
+text-decoration: none;
+padding: 7px;
+} 
+.nav1 ul li a{
+
+text-decoration: none;
+color: blueviolet;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: large;
+}
+.nav1 ul li a:hover{
+
+transition: calc(0.5s);
+color: black;
+}
+
+
+/************ end navbar*********/
+
+
+.card1{
+text-align: center;   
+}
+.card1 h1{
+
+font-family:'Courier New', Courier, monospace;
+}
+.card1 h4{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card1 button {
+
+background-color: whitesmoke;
+border: 1px solid black;
+width: 130px;
+height: 50px;
+}
+.card1 button:hover{
+background-color: blueviolet;
+transition: calc(0.5s);
+
+}
+.card1 button a{
+
+text-decoration: none;
+color: rgb(113, 55, 163);
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card1 button a:hover{
+color: whitesmoke;
+font-weight: bold;
+transition: calc(0.5s);
+}
+
+/*********************end card1****************/
+
+.card2{
+text-align: center;
+}
+.card2 button{
+background-color: blueviolet;
+border-radius: 1px solid black;
+width: 130px;
+height: 50px;
+}
+.card2 button a{
+color: whitesmoke;
+text-decoration: none;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card2 button:hover{
+background-color: black;
+transition: calc(0.5s);
+}
+
+/****************end card2***********************/
+
+
+.card3{
+text-align: center;
+}
+.card4{
+display: flex;
+justify-content: space-around;
+text-align: center;
+}
+.card4 div{
+width: 30%;
+}
+.allcard{
+background-color: whitesmoke;
+}
+/*****************end card3***********************/
+
+.card5{
+display: flex;
+justify-content: space-around;
+
+}
+.card5 .o6{
+width: 500px;
+align-items: center;
+padding-top: 120px;
+padding-left: 50px;
+}
+.card5 img{
+width: 80%;
+}
+
+.card5 button{
+
+border-radius: 2px solid black;
+width: 110px;
+height: 30px;
+margin: 20px;
+background-color: blueviolet;
+}
+.card5 button a{
+text-decoration: none;
+color: whitesmoke;
+}
+.card5 button a:hover{
+color: rgb(233, 133, 193);
+transition: calc(0.5s);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/******************end card 4*******************/
+
+.card6{
+text-align: center;
+}
+.card7{
+text-align: center;
+}
+
+
+/**********************end card5***************/
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+.footer {
+position: relative;
+width: 100%;
+background: #3586ff;
+min-height: 100px;
+padding: 20px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.social-icon,
+.menu {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 0;
+flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+list-style: none;
+}
+
+.social-icon__link {
+font-size: 2rem;
+color: #fff;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+}
+.social-icon__link:hover {
+transform: translateY(-10px);
+}
+
+.menu__link {
+font-size: 1.2rem;
+color: #fff;
+margin: 0 10px;
+display: inline-block;
+transition: 0.5s;
+text-decoration: none;
+opacity: 0.75;
+font-weight: 300;
+}
+
+.menu__link:hover {
+opacity: 1;
+}
+
+.footer p {
+color: #fff;
+margin: 15px 0 10px 0;
+font-size: 1rem;
+font-weight: 300;
+}
+
+.wave {
+position: absolute;
+top: -100px;
+left: 0;
+width: 100%;
+height: 100px;
+background: url("https://i.ibb.co/wQZVxxk/wave.png");
+background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+z-index: 1000;
+opacity: 1;
+bottom: 0;
+animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+z-index: 999;
+opacity: 0.5;
+bottom: 10px;
+animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+z-index: 1000;
+opacity: 0.2;
+bottom: 15px;
+animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+z-index: 999;
+opacity: 0.7;
+bottom: 20px;
+animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+0% {
+  background-position-x: 1000px;
+}
+100% {
+  background-positon-x: 0px;
+}
+}
+
+@keyframes animate {
+0% {
+  background-position-x: -1000px;
+}
+100% {
+  background-positon-x: 0px;
+}
+}
+
+/******************end footer****************/
+
+@media(max-width:680px){
+
+.nav1 ul li{
+    display: none;
+}
+
+.card2 .o2 img{
+width: 300px;
+
+}
+
+.card4{
+display: block;
+text-align: center;
+width: 600px;
+padding-left: 95px;
+}
+.card5 {
+display: block;
+}
+.card5 .o6{
+padding-left: 95px;
+}
+.card5 img{
+margin-left: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
